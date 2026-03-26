@@ -14,7 +14,7 @@
     <meta name="msapplication-TileImage" content="/AppICON2.png" />
 
     <!-- ── Standard favicon / touch icons ───────────────── -->
-    <link rel="shortcut icon" href="/assets/favicon.png" />
+      <link rel="shortcut icon" href="/AppICON2.png" />
     <link rel="icon" type="image/png" sizes="192x192" href="/AppICON2.png" />
     <link rel="icon" type="image/png" sizes="512x512" href="/AppICON2.png" />
 
@@ -114,4 +114,9 @@
     <div id="root"></div>
   <script src="/dev/_expo/static/js/web/index-5b9765984676fe506bbc7213d075483a.js" defer></script>
 </body>
+      <script>
+            if ('serviceWorker' in navigator) {
+                  navigator.serviceWorker.register('/sw.js').catch(() => {});
+            }
+      </script>
 </html>
